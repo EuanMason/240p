@@ -95,14 +95,15 @@ $(function() {
           console.log(liveStreamers);
           for (var i = 0; i < liveStreamers.length; i++) {
             var source = "https://player.twitch.tv/?"+liveStreamers[i];
-            // <iframe
-            //   src = source;
-            //   height="<height>"
-            //   width="<width>"
-            //   frameborder="<frameborder>"
-            //   scrolling="<scrolling>"
-            //   allowfullscreen="<allowfullscreen>">
-            // </iframe>
+
+            <iframe
+                src=source
+                height="720"
+                width="1280"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen="true">
+            </iframe>
 
           }
 				}
