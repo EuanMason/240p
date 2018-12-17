@@ -28,16 +28,22 @@
 
 
 	<script>
-	$.getJSON('https://api.twitch.tv/kraken/streams/Sacriel', function(channel) {
-
-	    if (channel["stream"] == null) {
-	        document.write("banana")
-
-	    } else {
-	        document.write("wow");
-
-	    }
-	});
+	$.ajax({
+     url: "https://api.twitch.tv/kraken/streams/" + "sacriel",
+     dataType: 'json',
+     headers: {
+       'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
+     }
+     success: function(channel)
+     {
+       if (channel["stream"] == null)
+       {
+         alert(nickname+" is not online");
+       } else {
+         alert(nickname+" is online!");
+       }
+     }
+   });
 	</script>
 
 
