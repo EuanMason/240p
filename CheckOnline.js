@@ -9,6 +9,7 @@ $(function() {
 	var statusString = "";
 	var htmlString = "";
 	var htmlString2 = "";
+  var liveStreamers = []
 
 //create urlString with loginName array
 	for (var i = 0; i < loginNames.length; i++){
@@ -86,9 +87,12 @@ $(function() {
 								var newDescription = document.getElementById(descName);
 								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
 								newDescription.innerHTML = newData.data[i].title;
+                liveStreamers.push("profileData.data[j].display_name")
 							}
 						}
 					}
+
+          console.console.log(liveStreamers);
 				}
 			}
 		});
