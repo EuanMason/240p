@@ -87,7 +87,7 @@ $(function() {
 								var newDescription = document.getElementById(descName);
 								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
 								newDescription.innerHTML = newData.data[i].title;
-                liveStreamers.push("profileData.data[j].display_name")
+                liveStreamers.push(profileData.data[j].display_name)
 							}
 						}
 					}
