@@ -49,7 +49,9 @@ $(function() {
 			profileData.data[j].display_name +
 			"</a></h2><h5 id=\"" +
 			profileData.data[j].display_name +
-			"\">Offline</h5></div><div class=\"col span-7-of-12\">" +
+			"\">Offline</h5></div><div class=\"col span-7-of-12\"><h4 id=\"desc" +
+			profileData.data[j].display_name +
+			"\">" +
 			"</h4></div></div> ";
 
 		}
@@ -83,7 +85,6 @@ $(function() {
 								var descName = "desc"+ profileData.data[j].display_name;
 								var newDescription = document.getElementById(descName);
 								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
-								newDescription.innerHTML = newData.data[i].title;
                 liveStreamers.push(profileData.data[j].display_name);
 							}
 						}
