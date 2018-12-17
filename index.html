@@ -1,58 +1,25 @@
-<!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitch.TV FCC Challenge</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-
-	<meta name="theme-color" content="#f8f8f8"/>
-
-
-	<link async href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<title>240p</title>
 </head>
+
 <body>
-
-
-	<script>
-	$.ajax({
-     url: "https://api.twitch.tv/kraken/streams/" + "sacriel",
-     dataType: 'json',
-     headers: {
-       'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
-     }
-     success: function(channel)
-     {
-       if (channel["stream"] == null)
-       {
-         alert(nickname+" is not online");
-       } else {
-         alert(nickname+" is online!");
-       }
-     }
-   });
-	</script>
-
-
-<p>hello</p>
-
-
-
+  <section>
+    <h1>FCC Twitch.TV Challenge</h1>
+    <h3>with the New Helix API</h3>
+    <div class="container" id="displayTable">
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="CheckOnline.js"></script>
 
 
 </body>
-
 
 </html>
