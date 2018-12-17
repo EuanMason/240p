@@ -49,9 +49,7 @@ $(function() {
 			profileData.data[j].display_name +
 			"</a></h2><h5 id=\"" +
 			profileData.data[j].display_name +
-			"\">Offline</h5></div><div class=\"col span-7-of-12\"><h4 id=\"desc" +
-			profileData.data[j].display_name +
-			"\">" +
+			"\">Offline</h5> +
 			"</h4></div></div> ";
 
 		}
