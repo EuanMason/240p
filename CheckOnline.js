@@ -62,6 +62,7 @@ $(function() {
 
 //check to see if users are offline or live
 	function checkStatus(profileData) {
+    console.log("StatusString = " + statusString);
 		$.ajax({
 			type: 'GET',
 			url: "https://api.twitch.tv/helix/streams?" + statusString,
