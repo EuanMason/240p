@@ -95,7 +95,7 @@ $(function() {
           console.log(liveStreamers);
           for (var i = 0; i < liveStreamers.length; i++) {
             var source = "https://player.twitch.tv/?"+liveStreamers[i];
-            var iframe = "<iframe src="+ source + "height="720" width="1280" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>";
+            var iframe = "<iframe src="+ source + "height='720' width='1280' frameborder='0' scrolling='no' allowfullscreen='true'></iframe>";
 
             $(".streams").append(iframe);
 
