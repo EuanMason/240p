@@ -95,7 +95,7 @@ $(function() {
 
           }
 				}
-			
+
 		});
 	};
 
@@ -109,5 +109,5 @@ $(function() {
       console.log("iFrame = " + iframe);
       document.getElementById('streams').insertAdjacentHTML('beforeend', iframe);
   }
-}
+};
 });
