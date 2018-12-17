@@ -2,7 +2,8 @@ $(function() {
 	//establish variables
 	var $displayTable = $("#displayTable");
 	var $displayTable2 = $("#displayTable2");
-	var loginNames = ["ESL_SC2", "cretetion", "freecodecamp", "cdnthe3rd", "drdisrespectlive", "jukes", "xqcow", "noobs2ninjas"]
+	var loginNames = ["TheSTINGIN", "AntonioAsh", "Atlas", "Chachava", "Crittle888", "Grimli", "HrvstrOfEnergy",
+                    "Jansey", "princess___lissy", "TheOptionalOath", "WhiteFyr"]
 	var urlString = "";
 	var urlString2 = "";
 	var statusString = "";
