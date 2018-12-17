@@ -70,7 +70,7 @@ $(function() {
 				'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
 			},
 			success: function(newData) {
-
+      console.log("newData = " +newData);
 			if (newData.data.length === 0) {
 
 
