@@ -86,7 +86,7 @@ $(function() {
 								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
                 liveStreamers.push(profileData.data[j].display_name);
 							} else {
-                offStreamers.push(newData.data.display_name);
+                offStreamers.push(profileData.data[j].display_name);
                 console.log("OffStreamers = "+offStreamers);
               }
 						}
