@@ -85,6 +85,7 @@ $(function() {
 								var newDescription = document.getElementById(descName);
 								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
                 liveStreamers.push(profileData.data[j].display_name);
+                console.log("Type = ? "+profileData.data[j].type);
 							} else {
                 offStreamers.push(profileData.data[j].display_name);
                 console.log("OffStreamers = "+offStreamers);
