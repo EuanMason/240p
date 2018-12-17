@@ -45,7 +45,13 @@ $(function() {
 			profileData.data[j].profile_image_url +
 			"\" height=\"70px\" width=\"70px\"></div><div class=\"col span-4-of-12\"><h2><a href=\"https://www.twitch.tv/" +
 			profileData.data[j].display_name +
-			"\" target=\"_blank\">";
+			"\" target=\"_blank\">" +
+			profileData.data[j].display_name +
+			"</a></h2><h5 id=\"" +
+			profileData.data[j].display_name +
+			"\">Offline</h5></div><div class=\"col span-7-of-12\"><h4 id=\"desc" +
+			profileData.data[j].display_name +
+			"\">";
 
 		}
 
