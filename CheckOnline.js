@@ -14,7 +14,7 @@ $(function() {
 
 //create urlString with loginName array
 	for (var i = 0; i < loginNames.length; i++){
-		if (loginNames.length > i-2) {
+		if (loginNames.length > i) {
 			urlString += "login=" + loginNames[i] + "&";
 			statusString += "user_login=" + loginNames[i] + "&";
 		} else {
