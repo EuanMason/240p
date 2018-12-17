@@ -31,7 +31,7 @@ $(function() {
 			'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
 		},
 		success: function(profileData) {
-			console.log(profileData);
+			console.log(JSON.stringify(profileData));
 
 			createTable(profileData);
 		}
