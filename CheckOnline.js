@@ -14,7 +14,7 @@ $(function() {
 
 //create urlString with loginName array
 	for (var i = 0; i < loginNames.length; i++){
-		if (loginNames.length > i-5) {
+		if (loginNames.length > i-1) {
 			urlString += "login=" + loginNames[i] + "&";
 			statusString += "user_login=" + loginNames[i] + "&";
 		} else {
@@ -63,6 +63,7 @@ $(function() {
 //check to see if users are offline or live
 	function checkStatus(profileData) {
     console.log("StatusString = " + statusString);
+    statusString = "user_login=TheSTINGIN&user_login=AntonioAsh&user_login=Atlas&user_login=Chachava&user_login=Crittle888&user_login=Grimli&user_login=HrvstrOfEnergy&user_login=Jansey&user_login=princess___lissy&user_login=TheOptionalOath&user_login=WhiteFyr";
 		$.ajax({
 			type: 'GET',
 			url: "https://api.twitch.tv/helix/streams?" + statusString,
