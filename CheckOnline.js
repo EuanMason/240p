@@ -63,7 +63,6 @@ $(function() {
 //check to see if users are offline or live
 	function checkStatus(profileData) {
     console.log("StatusString = " + statusString);
-    statusString = "user_login=TheSTINGIN&user_login=AntonioAsh&user_login=Atlas&user_login=Chachava&user_login=Crittle888&user_login=Grimli&user_login=HrvstrOfEnergy&user_login=Jansey&user_login=princess___lissy&user_login=TheOptionalOath&user_login=WhiteFyr";
 		$.ajax({
 			type: 'GET',
 			url: "https://api.twitch.tv/helix/streams?" + statusString,
@@ -87,7 +86,7 @@ $(function() {
 								var newDescription = document.getElementById(descName);
 								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
                 liveStreamers.push(profileData.data[j].display_name);
-                console.log("Type = ? "+profileData.data[j].type);
+                console.log("Type = ? "+profileData.data[j].started_at);
 							} else {
                 offStreamers.push(profileData.data[j].display_name);
                 console.log("OffStreamers = "+offStreamers);
