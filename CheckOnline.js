@@ -92,7 +92,7 @@ $(function() {
 						}
 					}
 
-          console.console.log(liveStreamers);
+          console.log(liveStreamers);
 				}
 			}
 		});
