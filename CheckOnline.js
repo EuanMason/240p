@@ -72,8 +72,7 @@ $(function() {
 
 			if (newData.data.length === 0) {
 
-          offStreamers.push(newData.data.display_name);
-          console.log("OffStreamers = "+offStreamers);
+
 
 				} else {
 					for (var i=0; i<newData.data.length; i++){
@@ -86,7 +85,10 @@ $(function() {
 								var newDescription = document.getElementById(descName);
 								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
                 liveStreamers.push(profileData.data[j].display_name);
-							}
+							} else {
+                offStreamers.push(newData.data.display_name);
+                console.log("OffStreamers = "+offStreamers);
+              }
 						}
 					}
 
