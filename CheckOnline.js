@@ -50,8 +50,7 @@ $(function() {
 			"</a></h2><h5 id=\"" +
 			profileData.data[j].display_name +
 			"\">Offline</h5>" +
-			"\">" +
-			"</h4></div></div> ";
+			"</div></div>";
 
 		}
 
