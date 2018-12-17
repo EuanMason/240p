@@ -52,7 +52,6 @@ $(function() {
 			"\">Offline</h5></div><div class=\"col span-7-of-12\"><h4 id=\"desc" +
 			profileData.data[j].display_name +
 			"\">" +
-			profileData.data[j].description +
 			"</h4></div></div> ";
 
 		}
