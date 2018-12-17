@@ -65,7 +65,7 @@ $(function() {
     console.log("StatusString = " + statusString);
 		$.ajax({
 			type: 'GET',
-			url: "https://api.twitch.tv/helix/streams?" + statusString,
+			url: "https://api.twitch.tv/helix/streams?user_login=Chachava",
 			headers: {
 				'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
 			},
