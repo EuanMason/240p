@@ -25,7 +25,7 @@ $(function() {
 		type: 'GET',
 		url: "https://api.twitch.tv/helix/users?" + urlString,
 		headers: {
-			'Client-ID': 'tmqo5l8t8uylxhoct7vzqrzjr22zce'
+			'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
 		},
 		success: function(profileData) {
 			console.log(profileData);
