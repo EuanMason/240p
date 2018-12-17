@@ -3,7 +3,7 @@ $(function() {
 	var $displayTable = $("#displayTable");
 	var $displayTable2 = $("#displayTable2");
 	var loginNames = ["TheSTINGIN", "AntonioAsh", "Atlas", "Chachava", "Crittle888", "Grimli", "HrvstrOfEnergy",
-                    "Jansey", "princess___lissy", "TheOptionalOath", "WhiteFyr"]
+                    "Jansey", "princess___lissy", "TheOptionalOath", "WhiteFyr", "yogscast"]
 	var urlString = "";
 	var urlString2 = "";
 	var statusString = "";
