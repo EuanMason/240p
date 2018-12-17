@@ -9,7 +9,8 @@ $(function() {
 	var statusString = "";
 	var htmlString = "";
 	var htmlString2 = "";
-  var liveStreamers = []
+  var liveStreamers = [];
+  var offStreamers = [];
 
 //create urlString with loginName array
 	for (var i = 0; i < loginNames.length; i++){
@@ -71,7 +72,8 @@ $(function() {
 
 			if (newData.data.length === 0) {
 
-
+          offStreamers.push(newData.data.display_name);
+          console.log("OffStreamers = "+offStreamers);
 
 				} else {
 					for (var i=0; i<newData.data.length; i++){
@@ -88,12 +90,7 @@ $(function() {
 						}
 					}
 
-          console.log(liveStreamers);
-          for (var i = 0; i < liveStreamers.length; i++) {
-            var source = "https://player.twitch.tv/?channel="+liveStreamers[i];
-            var iframe = "<iframe src="+ source + " height='720' width='1280' frameborder='0' scrolling='yes' allowfullscreen='true'></iframe>";
-            console.log("iFrame = " + iframe);
-            document.getElementById('streams').insertAdjacentHTML('beforeend', iframe);
+
 
 
           }
@@ -101,4 +98,15 @@ $(function() {
 			}
 		});
 	};
+
+
+
+
+  function getStreamsofOnline() {
+    for (var i = 0; i < liveStreamers.length; i++) {
+      var source = "https://player.twitch.tv/?channel="+liveStreamers[i];
+      var iframe = "<iframe src="+ source + " height='720' width='1280' frameborder='0' scrolling='yes' allowfullscreen='true'></iframe>";
+      console.log("iFrame = " + iframe);
+      document.getElementById('streams').insertAdjacentHTML('beforeend', iframe);
+  }
 });
