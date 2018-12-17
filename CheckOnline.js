@@ -93,6 +93,18 @@ $(function() {
 					}
 
           console.log(liveStreamers);
+          for (var i = 0; i < liveStreamers.length; i++) {
+            var source = "https://player.twitch.tv/?"+liveStreamers[i];
+            <iframe
+              src = source;
+              height="<height>"
+              width="<width>"
+              frameborder="<frameborder>"
+              scrolling="<scrolling>"
+              allowfullscreen="<allowfullscreen>">
+            </iframe>
+
+          }
 				}
 			}
 		});
