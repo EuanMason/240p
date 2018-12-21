@@ -149,7 +149,7 @@ function newTable(profileData) {
 			"\" height=\"30px\" width=\"30px\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			liveStreamers[j] +
-			"><a/>" +
+			"\" target=\"_blank\">" +
 			liveStreamers[j] + "<p>\n</p>";
 		}
 
