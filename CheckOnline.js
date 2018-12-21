@@ -143,7 +143,7 @@ function newTable() {
 
 //console.log(htmlString);
 	displayTable.insertAdjacentHTML("beforeend", htmlString);
-}
+};
 
 
   function getStreamsofOnline() {
@@ -153,5 +153,6 @@ function newTable() {
       console.log("iFrame = " + iframe);
       document.getElementById('streams').insertAdjacentHTML('beforeend', iframe);
   }
+	newTable();
 };
 });
