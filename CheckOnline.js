@@ -76,10 +76,10 @@ $(function() {
 					console.log('new data 0?');
 				} else {
 					for (var i = 0; i < newData.data.length; i++) {
-						if (newData.data[j].type == 'live') {
-							liveStreamers.push(profileData.data[j].display_name);
+						if (newData.data[i].type == 'live') {
+							liveStreamers.push(profileData.data[i].display_name);
 						} else {
-							offStreamers.push(profileData.data[j].display_name);
+							offStreamers.push(profileData.data[i].display_name);
 						}
 					}
 
