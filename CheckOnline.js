@@ -111,7 +111,7 @@ $(function() {
 	};
 
 function newTable() {
-	htmlString += '<div id="online-title" style="background-color:; color:">ONLINE</div'
+	htmlString += '<div id="online-title" style="background-color:; color:">ONLINE</div>'
 	if (liveStreamers.length == 0) {
 		htmlString += '<p>All streamers offline</p>''
 	} else {
