@@ -113,7 +113,7 @@ $(function() {
 
 function newTable() {
 	console.log('In newTable but am I really?');
-	htmlString += '<div id="online-title" style="background-color:; color:">ONLINE</div>'
+	htmlString = '<div id="online-title" style="background-color:; color:">ONLINE</div>'
 	if (liveStreamers.length == 0) {
 		console.log('All offline');
 		htmlString += '<p>All streamers offline</p>'
@@ -155,6 +155,5 @@ function newTable() {
       console.log("iFrame = " + iframe);
       document.getElementById('streams').insertAdjacentHTML('beforeend', iframe);
   }
-	newTable();
 };
 });
