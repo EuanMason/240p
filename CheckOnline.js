@@ -79,12 +79,12 @@ $(function() {
 					for (var i = 0; i < newData.data.length; i++) {
 						if (newData.data[i].type == 'live') {
 							if (checkIDMatch(newData.data[i].user_id, profileData)) {
-								liveStreamers.push(profileData.data[i].display_name);
+								liveStreamers.push(newData.data[i].user_name);
 							} else {
-								offStreamers.push(profileData.data[i].display_name);
+								offStreamers.push(newData.data[i].user_name);
 							}
 						} else {
-							offStreamers.push(profileData.data[i].display_name);
+							offStreamers.push(newData.data[i].user_name);
 						}
 					}
 
