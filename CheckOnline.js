@@ -77,7 +77,7 @@ $(function() {
 				} else {
 					for (var i = 0; i < newData.data.length; i++) {
 						if (newData.data[i].type == 'live') {
-							if (newData.data[i].user_id == profileData.data[j].id) {
+							if (newData.data[i].user_id == profileData.data[i].id) {
 								liveStreamers.push(profileData.data[i].display_name);
 							} else {
 								offStreamers.push(profileData.data[i].display_name);
