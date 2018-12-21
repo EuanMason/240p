@@ -33,7 +33,8 @@ $(function() {
 		success: function(profileData) {
 			console.log(profileData);
 
-			createTable(profileData);
+			// createTable(profileData);
+			checkStatus(profileData);
 		}
 	});
 
@@ -76,9 +77,8 @@ $(function() {
 					console.log('new data 0?');
 				} else {
 					for (var i = 0; i < newData.data.length; i++) {
-						console.log(newData.data[i].type);
 						if (newData.data[i].type == 'live') {
-							if (newData.data[i].user_id == profileData.data[i].id) {
+							if (checkIDMatch(newData.data[i].user_id, profileData)) {
 								liveStreamers.push(profileData.data[i].display_name);
 							} else {
 								offStreamers.push(profileData.data[i].display_name);
@@ -125,6 +125,15 @@ $(function() {
 
 		});
 	};
+
+	function checkIDMatch(newID, profileData) {
+		for (var i = 0; i < profileData.data.length; i++) {
+			if (newID == profileData.data[i].id) {
+				return true;
+			}]
+		}
+		return false;
+	}
 
 function newTable(profileData) {
 	console.log('In newTable but am I really?');
