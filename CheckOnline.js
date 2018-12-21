@@ -65,11 +65,12 @@ $(function() {
     console.log("StatusString = " + statusString);
 		$.ajax({
 			type: 'GET',
-			url: "https://api.twitch.tv/helix/streams?user_login=TheSTINGIN" ,
+			url: "https://api.twitch.tv/helix/streams?" + statusString,
 			headers: {
 				'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
 			},
 			success: function(newData) {
+				console.log(newData);
 
 			if (newData.data.length === 0) {
 					console.log('new data 0?');
