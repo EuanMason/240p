@@ -111,6 +111,7 @@ $(function() {
 	};
 
 function newTable() {
+	console.log('In newTable but am I really?');
 	htmlString += '<div id="online-title" style="background-color:; color:">ONLINE</div>'
 	if (liveStreamers.length == 0) {
 		console.log('All offline');
