@@ -145,7 +145,9 @@ function newTable(profileData) {
 		console.log('In else but am I really?');
 		for (var j = 0; j < liveStreamers.length; j++){
 			console.log(liveStreamers[j]);
-			htmlString += "<a href=\"https://www.twitch.tv/" +
+			htmlString += "<img src=\"" + getImg(liveStreamers[j], profileData) +
+			"\" height=\"70px\" width=\"70px\">" +
+			"<a href=\"https://www.twitch.tv/" +
 			liveStreamers[j] +
 			"\" target=\"_blank\">" +
 			liveStreamers[j] + "<p>\n</p>";
@@ -170,13 +172,24 @@ function newTable(profileData) {
 	displayTable.insertAdjacentHTML("beforeend", htmlString);
 };
 
+function getImg(streamer, profileData){
+	for (var i = 0; i < profileData.data.length; i++) {
+		if (profileData.data[i].display_name == streamer) {
+			return profileData.data[i].profile_image_url;
+		}
+	}
+	return "";
+}
+
 
   function getStreamsofOnline() {
 		console.log('In getStreamsofOnline but am I really?');
     for (var i = 0; i < liveStreamers.length; i++) {
+
       var source = "https://player.twitch.tv/?channel="+liveStreamers[i];
-      var iframe = "<iframe src="+ source + " height='720' width='1280' frameborder='0' scrolling='yes' allowfullscreen='true'></iframe>";
+      var iframe = "<iframe src="+ source + " height='360' width='640' frameborder='0' scrolling='yes' allowfullscreen='true'></iframe>";
       console.log("iFrame = " + iframe);
+
       document.getElementById('streams').insertAdjacentHTML('beforeend', iframe);
   }
 };
