@@ -161,7 +161,9 @@ function newTable(profileData) {
 		htmlString += '<p>All streamers online</p>'
 	} else {
 		for (var j = 0; j < offStreamers.length; j++){
-			htmlString += "<a href=\"https://www.twitch.tv/" +
+			htmlString += "<img src=\"" + getImg(offStreamers[j], profileData) +
+			"\" height=\"70px\" width=\"70px\">" +
+			"<a href=\"https://www.twitch.tv/" +
 			offStreamers[j] +
 			"\" target=\"_blank\">" +
 			offStreamers[j] + "<p>\n</p>";
