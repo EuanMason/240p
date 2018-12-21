@@ -186,13 +186,16 @@ function getImg(streamer, profileData){
 
   function getStreamsofOnline() {
 		console.log('In getStreamsofOnline but am I really?');
+		var string ="<div style=\"text-align: center\">";
     for (var i = 0; i < liveStreamers.length; i++) {
 
       var source = "https://player.twitch.tv/?channel="+liveStreamers[i];
       var iframe = "<iframe src="+ source + " height='360' width='640' frameborder='0' scrolling='yes' allowfullscreen='true'></iframe>";
       console.log("iFrame = " + iframe);
+			string += iframe;
 
-      document.getElementById('streams').insertAdjacentHTML('beforeend', iframe);
   }
+	string += "</div>"
+	document.getElementById('streams').insertAdjacentHTML('beforeend', string);
 };
 });

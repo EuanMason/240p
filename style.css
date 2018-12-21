@@ -196,9 +196,9 @@ p {
 	 margin: auto;
 	 margin-top: 10px;
 	 margin-bottom: 10px;
-	 max-width: 50%;
+	 max-width: 80%;
+	 min-width: 50%;
 	 width: fit-content;
-
 	 outline: 5px solid green;
  }
 
