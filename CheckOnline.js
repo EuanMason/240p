@@ -165,7 +165,7 @@ function newTable(profileData) {
 			"\" height=\"30px\" width=\"30px\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			offStreamers[j] +
-			"\" target=\"_blank\">" +
+			"\">" +
 			offStreamers[j] + "<p>\n</p>";
 		}
 	}
