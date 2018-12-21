@@ -110,7 +110,7 @@ $(function() {
 
           }
 					for (var i = 0; i < profileData.length; i++) {
-						if (!liveStreamers.includes(profileData.data[i].display_name) || !offStreamers.includes(profileData.data[i].display_name)) {
+						if (!liveStreamers.includes(profileData.data[i].display_name) && !offStreamers.includes(profileData.data[i].display_name)) {
 							offStreamers.push(profileData.data[i].display_name);
 						}
 					}
