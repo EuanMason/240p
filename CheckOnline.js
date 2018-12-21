@@ -130,7 +130,7 @@ $(function() {
 		for (var i = 0; i < profileData.data.length; i++) {
 			if (newID == profileData.data[i].id) {
 				return true;
-			}]
+			}
 		}
 		return false;
 	}
