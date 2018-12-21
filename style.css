@@ -186,6 +186,7 @@ p {
 .streamerBox
  {
 	 width: 400px;
+	 outline: 5px ridge grey;
  }
 
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
