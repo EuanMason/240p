@@ -186,6 +186,8 @@ p {
 .streamerBox
  {
 	 margin: auto;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
 	 width: 400px;
 	 outline: 5px ridge grey;
  }
@@ -193,6 +195,7 @@ p {
  .liveStreamers {
 	 margin: auto;
 	 margin-top: 10px;
+	 margin-bottom: 10px;
 	 width: fit-content;
 	 outline: 5px solid green;
  }
