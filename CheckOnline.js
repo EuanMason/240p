@@ -72,7 +72,7 @@ $(function() {
 			success: function(newData) {
 
 			if (newData.data.length === 0) {
-
+					console.log('new data 0?');
 				} else {
 					for (var i = 0; i < newData.data.length; i++) {
 						if (newData.data[j].type == 'live') {
@@ -101,10 +101,11 @@ $(function() {
 					// 	}
 					// }
 
-          getStreamsofOnline();
-					newTable();
+
 
           }
+					getStreamsofOnline();
+					newTable();
 				}
 
 		});
