@@ -149,8 +149,8 @@ function newTable(profileData) {
 			"\" height=\"30px\" width=\"30px\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			liveStreamers[j] +
-			"\" target=\"_blank\"></a>" +
-			liveStreamers[j] + "<p>\n</p>";
+			"\" target=\"_blank\">" +
+			liveStreamers[j] + "</a><p>\n</p>";
 		}
 
 
@@ -165,8 +165,8 @@ function newTable(profileData) {
 			"\" height=\"30px\" width=\"30px\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			offStreamers[j] +
-			"\" target=\"_blank\"></a>" +
-			offStreamers[j] + "<p>\n</p>";
+			"\" target=\"_blank\">" +
+			offStreamers[j] + "</a><p>\n</p>";
 		}
 	}
 
