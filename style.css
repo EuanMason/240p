@@ -185,6 +185,7 @@ p {
 
 .streamerBox
  {
+	 margin: auto;
 	 width: 400px;
 	 outline: 5px ridge grey;
  }
