@@ -120,7 +120,7 @@ function newTable() {
 			liveStreamers[j] +
 			"\" target=\"_blank\">" +
 			liveStreamers[j];
-	}
+		}
 
 
 
