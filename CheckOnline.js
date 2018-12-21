@@ -117,9 +117,9 @@ function newTable() {
 	} else {
 		for (var j = 0; j < liveStreamers.length; j++){
 			htmlString += "<a href=\"https://www.twitch.tv/" +
-			profileData.data[j].display_name +
+			liveStreamers[j] +
 			"\" target=\"_blank\">" +
-			profileData.data[j].display_name;
+			liveStreamers[j];
 	}
 
 
@@ -131,9 +131,9 @@ function newTable() {
 	} else {
 		for (var j = 0; j < offStreamers.length; j++){
 			htmlString += "<a href=\"https://www.twitch.tv/" +
-			profileData.data[j].display_name +
+			offStreamers[j] +
 			"\" target=\"_blank\">" +
-			profileData.data[j].display_name;
+			offStreamers[j];
 	}
 
 //console.log(htmlString);
