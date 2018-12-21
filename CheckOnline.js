@@ -146,7 +146,7 @@ function newTable(profileData) {
 		for (var j = 0; j < liveStreamers.length; j++){
 			console.log(liveStreamers[j]);
 			htmlString += "<img src=\"" + getImg(liveStreamers[j], profileData) +
-			"\" height=\"70px\" width=\"70px\">" +
+			"\" height=\"30px\" width=\"30px\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			liveStreamers[j] +
 			"\" target=\"_blank\">" +
@@ -162,7 +162,7 @@ function newTable(profileData) {
 	} else {
 		for (var j = 0; j < offStreamers.length; j++){
 			htmlString += "<img src=\"" + getImg(offStreamers[j], profileData) +
-			"\" height=\"70px\" width=\"70px\">" +
+			"\" height=\"30px\" width=\"30px\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			offStreamers[j] +
 			"\" target=\"_blank\">" +
