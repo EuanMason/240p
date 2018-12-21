@@ -113,7 +113,7 @@ $(function() {
 function newTable() {
 	htmlString += '<div id="online-title" style="background-color:; color:">ONLINE</div>'
 	if (liveStreamers.length == 0) {
-		htmlString += '<p>All streamers offline</p>''
+		htmlString += '<p>All streamers offline</p>'
 	} else {
 		for (var j = 0; j < liveStreamers.length; j++){
 			htmlString += "<a href=\"https://www.twitch.tv/" +
@@ -125,9 +125,9 @@ function newTable() {
 
 
 	}
-	htmlString += '<div id="offline-title" style="background-color:; color:">Offline</div'
+	htmlString += '<div id="offline-title" style="background-color:; color:">Offline</div>'
 	if (offStreamers.length == 0) {
-		htmlString += '<p>All streamers online</p>''
+		htmlString += '<p>All streamers online</p>'
 	} else {
 		for (var j = 0; j < offStreamers.length; j++){
 			htmlString += "<a href=\"https://www.twitch.tv/" +
