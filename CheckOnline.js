@@ -70,30 +70,36 @@ $(function() {
 				'Client-ID': '7b4w6b4fjx7llf1dcudr2fhpnr5uxr'
 			},
 			success: function(newData) {
-			console.log("newData = "+ JSON.stringify(newData));
 
 			if (newData.data.length === 0) {
 
-
-
 				} else {
-					for (var i=0; i<newData.data.length; i++){
-						for (var j = 0; j<profileData.data.length; j++){
-							console.log(newData.data[i].user_id);
-							console.log(profileData.data[j].id);
-							if(newData.data[i].user_id === profileData.data[j].id) {
-								var profileStatus = document.getElementById(profileData.data[j].display_name);
-								var descName = "desc"+ profileData.data[j].display_name;
-								var newDescription = document.getElementById(descName);
-								profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
-                liveStreamers.push(profileData.data[j].display_name);
-                console.log("Type = ? "+newData.data[j].type);
-							} else {
-                offStreamers.push(profileData.data[j].display_name);
-                console.log("OffStreamers = "+offStreamers);
-              }
+					for (var i = 0; i < newData.data.length; i++) {
+						if (newData.data[j].type == 'live') {
+							liveStreamers.push(profileData.data[j].display_name);
+						} else {
+							offStreamers.push(profileData.data[j].display_name);
 						}
 					}
+
+
+					// for (var i=0; i<newData.data.length; i++){
+					// 	for (var j = 0; j<profileData.data.length; j++){
+					// 		console.log(newData.data[i].user_id);
+					// 		console.log(profileData.data[j].id);
+					// 		if(newData.data[i].user_id === profileData.data[j].id) {
+					// 			var profileStatus = document.getElementById(profileData.data[j].display_name);
+					// 			var descName = "desc"+ profileData.data[j].display_name;
+					// 			var newDescription = document.getElementById(descName);
+					// 			profileStatus.innerHTML = "<strong class=\"live\">Live</strong>";
+          //       liveStreamers.push(profileData.data[j].display_name);
+          //       console.log("Type = ? "+newData.data[j].type);
+					// 		} else {
+          //       offStreamers.push(profileData.data[j].display_name);
+          //       console.log("OffStreamers = "+offStreamers);
+          //     }
+					// 	}
+					// }
 
           getStreamsofOnline();
 
@@ -104,7 +110,35 @@ $(function() {
 		});
 	};
 
+function newTable() {
+	htmlString += '<div id="online-title" style="background-color:; color:">ONLINE</div'
+	if (liveStreamers.length == 0) {
+		htmlString += '<p>All streamers offline</p>''
+	} else {
+		for (var j = 0; j < liveStreamers.length; j++){
+			htmlString += "<a href=\"https://www.twitch.tv/" +
+			profileData.data[j].display_name +
+			"\" target=\"_blank\">" +
+			profileData.data[j].display_name;
+	}
 
+
+
+	}
+	htmlString += '<div id="offline-title" style="background-color:; color:">Offline</div'
+	if (offStreamers.length == 0) {
+		htmlString += '<p>All streamers online</p>''
+	} else {
+		for (var j = 0; j < offStreamers.length; j++){
+			htmlString += "<a href=\"https://www.twitch.tv/" +
+			profileData.data[j].display_name +
+			"\" target=\"_blank\">" +
+			profileData.data[j].display_name;
+	}
+
+//console.log(htmlString);
+	displayTable.insertAdjacentHTML("beforeend", htmlString);
+}
 
 
   function getStreamsofOnline() {

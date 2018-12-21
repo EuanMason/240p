@@ -130,6 +130,55 @@ a:active {
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
 
 
+#online-title {
+    width: 100%;
+    background-color: #6c72fa;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-top: -0px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+}
+#online-title {
+    background-color: #00a650 !important;
+}
+
+#offline-title {
+    width: 100%;
+    background-color: #c0c0c0;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+}
+#offline-title {
+    color: #00a650 !important;
+    background-color: #000000 !important;
+}
+
+#twitch-widget {
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #262626;
+    display: block;
+    font-size: .9em;
+    margin: 5px 0 0 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    background-color: transparent;
+}
+
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
