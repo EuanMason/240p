@@ -116,7 +116,7 @@ function newTable() {
 		console.log('All offline');
 		htmlString += '<p>All streamers offline</p>'
 	} else {
-
+		console.log('In else but am I really?');
 		for (var j = 0; j < liveStreamers.length; j++){
 			console.log(liveStreamers[j]);
 			htmlString += "<a href=\"https://www.twitch.tv/" +
