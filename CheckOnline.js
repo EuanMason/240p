@@ -138,7 +138,7 @@ function newTable(profileData) {
 			htmlString += "<a href=\"https://www.twitch.tv/" +
 			liveStreamers[j] +
 			"\" target=\"_blank\">" +
-			liveStreamers[j];
+			liveStreamers[j] + "<p>\n</p>";
 		}
 
 
