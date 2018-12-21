@@ -77,7 +77,11 @@ $(function() {
 				} else {
 					for (var i = 0; i < newData.data.length; i++) {
 						if (newData.data[i].type == 'live') {
-							liveStreamers.push(profileData.data[i].display_name);
+							if (newData.data[i].user_id == profileData.data[j].id) {
+								liveStreamers.push(profileData.data[i].display_name);
+							} else {
+								offStreamers.push(profileData.data[i].display_name);
+							}
 						} else {
 							offStreamers.push(profileData.data[i].display_name);
 						}
@@ -105,14 +109,19 @@ $(function() {
 
 
           }
+					for (var i = 0; i < profileData.length; i++) {
+						if (!liveStreamers.includes(profileData.data[i].display_name) || !offStreamers.includes(profileData.data[i].display_name)) {
+							offStreamers.push(profileData.data[i].display_name);
+						}
+					}
 					getStreamsofOnline();
-					newTable();
+					newTable(profileData);
 				}
 
 		});
 	};
 
-function newTable() {
+function newTable(profileData) {
 	console.log('In newTable but am I really?');
 	htmlString = '<div id="online-title" style="background-color:; color:">ONLINE</div>'
 	if (liveStreamers.length == 0) {
