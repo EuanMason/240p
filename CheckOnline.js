@@ -109,12 +109,13 @@ $(function() {
 
 
           }
-					for (var i = 0; i < profileData.length; i++) {
-						if (liveStreamers.includes(profileData.data[i].display_name) || offStreamers.includes(profileData.data[i].display_name)) {
+					for (var i = 0; i < profileData.data.length; i++) {
+						if (!liveStreamers.includes(profileData.data[i].display_name) && !offStreamers.includes(profileData.data[i].display_name)) {
 							console.log("if yes");
+							offStreamers.push(profileData.data[i].display_name);
 						} else {
 							console.log("if no");
-							offStreamers.push(profileData.data[i].display_name);
+
 						}
 					}
 					getStreamsofOnline();
