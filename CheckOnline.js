@@ -134,6 +134,7 @@ function newTable() {
 			offStreamers[j] +
 			"\" target=\"_blank\">" +
 			offStreamers[j];
+		}
 	}
 
 //console.log(htmlString);
