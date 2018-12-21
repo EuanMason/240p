@@ -192,6 +192,7 @@ p {
 
  .liveStreamers {
 	 margin: auto;
+	 margin-top: 10px;
 	 width: fit-content;
 	 outline: 5px solid green;
  }
